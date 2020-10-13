@@ -1,24 +1,14 @@
-def intf_parse(text):
-
-    interfaces = []
-    lines = text.splitlines()
-    for line in lines:
-        if line.startswith('Eth') and not line.startswith('Ethernet'):
-            infos = line.split()
-            intf_name = infos[0]
-            vlan = infos[1]
-            type = infos[2]
-            interface = {
-                'intf_name': intf_name,
-                'vlan': vlan,
-                'type': type
-            }
-            interfaces.append(interface)
-    return interfaces
+写一个段代码，解析端口列表。
 
 
-if __name__ == '__main__':
-    show_int_bri_text = '''
+参考本章节的20-循环判断解析网络配置
+
+可以使用以下文本，也可以使用生产中的数据
+
+但是必须是类似show int bri 或者show mac addres这种信息在每行里的文本。
+参考文本：
+
+'
 --------------------------------------------------------------------------------
 Port   VRF          Status IP Address                              Speed    MTU
 --------------------------------------------------------------------------------
@@ -54,25 +44,4 @@ Eth1/24         1       eth  access down    Link not connected       auto(D) --
 Eth1/25         1       eth  access down    Link not connected       auto(D) --
 Eth1/26         1       eth  access down    Link not connected       auto(D) --
 Eth1/27         1       eth  access down    Link not connected       auto(D) --
-'''
-    intfs = intf_parse(text=show_int_bri_text)
-    print(intfs)
-
-    # interfaces = []
-    # n = 0
-    # while n<lines_len:
-    #     line = lines[n]
-    #     n += 1
-    #     if line.startswith('Eth') and not line.startswith('Ethernet'):
-    #         infos = line.split()
-    #         intf_name = infos[0]
-    #         vlan = infos[1]
-    #         type = infos[2]
-    #         interface = {
-    #             'intf_name': intf_name,
-    #             'vlan': vlan,
-    #             'type': type
-    #         }
-    #         interfaces.append(interface)
-    # print(interfaces)
-    #
+'

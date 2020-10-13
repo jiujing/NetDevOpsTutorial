@@ -9,8 +9,8 @@ if __name__ == '__main__':
     '''
     n = 1
     while n < 20:
-        n += 1
         print('n:', n, end=',')
+        n += 1
     print('循环结束')
 
     while True:
