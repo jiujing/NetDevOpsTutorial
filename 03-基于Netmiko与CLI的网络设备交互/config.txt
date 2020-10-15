@@ -1,0 +1,8 @@
+interface eth1/5
+   description configed by netmiko
+interface eth1/6
+   description configed by netmiko
+interface eth1/7
+  description configed by netmiko
+interface eth1/8
+  description configed by netmiko

@@ -1,0 +1,2 @@
+1、 登陆设备，show int brief 端口列表，然后将内容保存到log文件中一份。
+2、 登陆设备，show int brief 端口列表，然后解析出端口名称及状态，用pandas写入到excel文件中。
