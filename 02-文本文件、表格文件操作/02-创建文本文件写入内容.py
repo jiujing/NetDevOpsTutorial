@@ -10,9 +10,9 @@ if __name__ == '__main__':
     # with open 上下文管理
     with open('test_w.txt', mode='w', encoding='utf8') as f:
         lines = [
-            'this is my text for write,\n',
-            'hello world!\n',
-            'bye\n'
+            'this is my text for write,',
+            'hello world!',
+            'bye'
         ]
         # 注意 writelines 不会写入换行，需要我们自己加。
         f.writelines(lines)

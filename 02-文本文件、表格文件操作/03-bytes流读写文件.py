@@ -9,5 +9,5 @@ if __name__ == '__main__':
         print('png bytes content is:', content)
         # 以上等同于
         # 注意 writelines 不会写入换行，需要我们自己加。
-        with open('test_bytes_dest.png', mode='wb') as dest_f:
-            dest_f.write(content)
+    with open('test_bytes_dest.png', mode='wb') as dest_f:
+        dest_f.write(content)

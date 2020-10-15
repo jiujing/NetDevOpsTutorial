@@ -10,14 +10,14 @@ if __name__ == '__main__':
     需要先open一个文件，将文件对象传入Python内置的csv对应的reader对象
     个人建议使用DictReader，写好表头，根据表头将数据转成dict的list
     '''
-    with open('devs.csv', encoding='utf8') as f:
+    with open('devs.csv', mode='r', encoding='utf8') as f:
         items = csv.DictReader(f)
         # 可以通过delimiter指定分隔符，常见的是逗号和制表符，默认是逗号
         # f_csv = csv.DictReader(f, delimiter='\t')
         for item in items:
             print(item)
 
-    # 也可以使用reader，返回的rows ，每一个row是一行数据，
+    # 也可以使用reader，返回的rows ，每一个row是一行数据，一行数据格式是一个list，
     with open('devs.csv', encoding='utf8') as f:
         f_csv = csv.reader(f)
         # 读取第一行作为header，同时将文件指针指向下一行
