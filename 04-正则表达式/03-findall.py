@@ -16,13 +16,13 @@ if __name__ == '__main__':
     interface Ehternet1/6 is up
     interface Ehternet1/7 is down
     '''
-    intf_pattern = r'interface\s+Ehternet\d+/\d+'
+    intf_pattern = r'Ehternet\d+/\d+'
     intf_match_list = re.findall(intf_pattern, line)
     for intf in intf_match_list:
         print('intf find::', intf, '无子串默认返回的是字符串的list', type(intf))
 
     # 有子串
-    intf_pattern = r'interface\s+Ehternet(\d+)/(\d+)'
+    intf_pattern = r'Ehternet(\d+)/(\d+)'
     intf_match_list = re.findall(intf_pattern, line)
     for intf in intf_match_list:
         print('intf slot and index info  find::', intf, '有子串默认返回的是子串的tuple', type(intf))

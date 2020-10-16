@@ -4,7 +4,7 @@ if __name__ == '__main__':
     '''
     python中字符串有转义一说，所以写正则的时候建议大家在正则字符串的最前面写上r
     re.match 模块会从头匹配正则,两个参数，第一个是正则的模式，第二个是待处理的字符串
-    从String首字母开始开始匹配pattern，string如果包含pattern子串，则匹配成功，返回Match对象，失败则返回None，若要完全匹配，pattern要以$结尾
+    从String首字母开始开始开始匹配pattern，string如果包含pattern子串，则匹配成功，返回Match对象，失败则返回None，若要完全匹配，pattern要以$结尾
     match的时候pattern相当于隐式包含了一个^开始符在最前面
     '''
     line = 'interface Ehternet1/5 is up'
