@@ -7,7 +7,7 @@ if __name__ == '__main__':
     若string中包含pattern子串，则返回Match对象，否则返回None，注意，如果string中存在多个pattern子串，只返回第一个。
     '''
     # 我们把line的开始加几个空格不影响我们在string中查找到我们想要的符合正则的子串
-    line = '   interface Ehternet1/5 is up'
+    line = '!!!interface Ehternet1/5 is up'
     intf_pattern = r'interface\s+Ehternet\d+/\d+'
     interface_match = re.search(intf_pattern, line)
     if interface_match:
