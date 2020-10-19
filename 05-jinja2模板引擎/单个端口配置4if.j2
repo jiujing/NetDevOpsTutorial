@@ -1,0 +1,7 @@
+interface {{ interface.name }}
+    description {{ interface.description }}
+{% if interface.shutdown  %}
+    shutdown
+{% else %}
+    no shutdown
+{% endif %}
