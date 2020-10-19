@@ -31,19 +31,21 @@ if __name__ == '__main__':
         NEWLINE_SEQUENCE = "\n"
         KEEP_TRAILING_NEWLINE = False
     '''
+    # #自定义<% %>作为逻辑控制符号
     # templ = '''
     # <% if a>b %>
     #  a>b
     # <% endif %>
     # '''
     # template = Template(templ,block_start_string='<%',block_end_string='%>')
-    # output = template.render(a=4,b=10)
+    # output = template.render(a=40,b=10)
     # print(output)
+    # # 使用# 单行控制逻辑，简洁
     templ = '''
-        # if a>b 
+        # if a>b
          a>b
         # endif
         '''
-    template = Template(templ, block_start_string='<%', line_statement_prefix='#')
+    template = Template(templ,  line_statement_prefix='#')
     output = template.render(a=41, b=10)
     print(output)

@@ -1,0 +1,2 @@
+根据端口表格，
+生成配置，端口描述，端口状态（shutdow、no shutdown ）配置的模板大家用自己习惯的即可。端口表见文件interfaces.xlsx

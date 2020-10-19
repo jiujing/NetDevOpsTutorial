@@ -25,3 +25,12 @@ if __name__ == '__main__':
     template = Template(templ)
     output = template.render()
     print(output)
+
+    # 这段的- 在end的右侧，所以会去掉end右侧的所有空白符，但是不会去掉左侧的空白符（换行）
+    templ = '''<div>
+            {%- if True %}yay
+        {% endif -%}
+    </div>'''
+    template = Template(templ)
+    output = template.render()
+    print(output)
