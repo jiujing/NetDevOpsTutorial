@@ -1,0 +1,12 @@
+Value Version ([^ ,]+)
+Value Uptime (.*)
+Value ConfigRegister (\w+)
+Value ResetReason (.*)
+
+Start
+# 我们尽量让rule是按实际顺序去编排 textfsm会对文本的每行都去匹配每个rule 
+  ^Cisco IOS .*Version ${Version},
+  ^.*uptime is ${Uptime}
+  ^Last reset from ${ResetReason}
+# 以上只做识别，我们在对应的地方record record是record action 大家最常用的一个 一般放在最后一个
+  ^Configuration register is ${ConfigRegister} -> Record

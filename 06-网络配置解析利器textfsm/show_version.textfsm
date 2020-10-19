@@ -1,0 +1,4 @@
+Value version (\d+.\d+\(\d+\))
+
+Start
+ ^\s+NXOS: version\s+${version} -> Record

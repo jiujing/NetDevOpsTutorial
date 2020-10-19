@@ -1,0 +1,18 @@
+Value Protocol (\S)
+Value Type (\S\S)
+Value Required Prefix (\S+)
+Value List Gateway (\S+)
+Value Distance (\d+)
+Value Metric (\d+)
+Value LastChange (\S+)
+
+Start
+  ^.*----- -> Routes
+
+Routes
+# 第一行匹配的是一个路由的最前面的 type和prefix  只是为了记录之前提取的数值，然后continue则从本行继续去匹配，默认是next 是读取下一行，但这显示是不行的
+  ^  \S \S\S -> Continue.Record
+  ^  ${Protocol} ${Type} ${Prefix}\s+via ${Gateway}\s+${Distance}/${Metric}\s+${LastChange}
+  ^\s+via ${Gateway}
+
+# 默认的EOF会记录之前匹配的所有

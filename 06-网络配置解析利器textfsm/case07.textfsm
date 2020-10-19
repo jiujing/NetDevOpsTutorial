@@ -1,0 +1,27 @@
+Value VSI_NAME (\S+)
+Value List ACs (BAGG[\s\S]+)
+Value List Tunnels (Tunnel\d+[\s\S]+)
+
+
+
+Start
+  # ^VSI Name:\s${VSI_NAME} -> Record Tunnels_State
+  ^VSI Name -> Continue.Record
+  ^VSI Name:\s+${VSI_NAME} 
+  ^\s+Tunnels: -> Tunnels_State
+  
+
+Tunnels_State
+  ^\s+${Tunnels}
+  ^\s+ACs: -> ACS_S
+  ^$$ -> Start
+
+ACS_S
+  ^\s+${ACs}
+  ^$$ -> Start
+
+
+#ACS
+  #^\s+AC\s+Link ID\s+ -> Next
+  #^\s+$(AC_NAME)\s+$(AC_LINK_ID)\s+$(AC_STATE)\s+$(AC_TYPE) -> Record
+  # ^\s+\S+\s\S+\s+\d+\s+\S+\s+(Manual)

@@ -1,0 +1,16 @@
+Value Filldown Chassis (\S+)
+# Value Slot (\d)
+Value Required Slot (\d)
+Value State (\w+)
+Value Temperature (\d+)
+Value DRAM (\d+)
+Value Buffer (\d+)
+
+Start
+  ^${Chassis}:
+  ^\s+${Slot}\s+${State}\s+${Temperature}\s+\d+\s+\d+\s+${DRAM}\s+\d+\s+${Buffer} -> Record
+  ^\s+${Slot}\s+${State} -> Record
+
+# EOF
+# 这个存在一个bug 在遇到7 之后 因为用了filldown Chassis会先赋值上一个的chassis值,遇到了隐含的EOF之后，会触发默认的record
+# 针对这个文本而言，一种方法是显示EOF，不记录；一种是用required 
