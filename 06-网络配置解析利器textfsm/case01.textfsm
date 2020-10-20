@@ -1,4 +1,4 @@
-Value Version ([^ ,]+)
+Value Version (\S+)
 Value Uptime (.*)
 Value ConfigRegister (\w+)
 Value ResetReason (.*)

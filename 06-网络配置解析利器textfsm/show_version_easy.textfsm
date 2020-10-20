@@ -1,33 +1,6 @@
-Software
-  BIOS: version
- NXOS: version 9.3(5)
-  BIOS compile time:
-  NXOS image file is: bootflash:///nxos.9.3.5.bin
-  NXOS compile time:  7/20/2020 20:00:00 [07/21/2020 06:30:11]
-
-
-Hardware
-  cisco Nexus9000 C9300v Chassis
-  Intel(R) Core(TM) i7-7700HQ CPU @ 2.80GHz with 6099336 kB of memory.
-  Processor Board ID 9UEC6BO4O8F
-
-  Device name: netdevops_n9k01
-  bootflash:    4287040 kB
-Kernel uptime is 0 day(s), 0 hour(s), 4 minute(s), 58 second(s)
-
-Last reset
-  Reason: Unknown
-  System version:
-  Service:
-
-plugin
-  Core Plugin, Ethernet Plugin
-
-Active Package(s):
-
-netdevops_n9k01#
-
-Value version (\d+.\d+\(\d+\))
+Value version (\S+)
+# 我们可以把正则写精细 也可以根据情况写"粗犷"
+# Value version (\d+.\d+\(\d+\))
 Value image_file (\S+\.bin)
 
 Start

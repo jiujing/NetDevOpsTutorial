@@ -1,5 +1,5 @@
 # Chassis value will be null for single chassis routers. 
-Value Filldown Chassis (.cc.?-re.)
+#Value Filldown Chassis (.cc.?-re.)
 Value Required Slot (\d+)
 Value State (\w+)
 Value Temp (\d+)
@@ -7,9 +7,9 @@ Value CPUTemp (\d+)
 Value DRAM (\d+)
 Value Model (\S+)
 
-# Allway starts in 'Start' state.
+# 永远是以start开头
 Start
-  ^${Chassis}
+  # ^${Chassis}
   # Record current values and change state.
   # No record will be output on first pass as 'Slot' is 'Required' but empty.
   # 这个实现了record action和状态的转移 进入一个解析每个板卡的解析state RESlot
@@ -27,4 +27,4 @@ RESlot
 
 # An implicit EOF state outputs the last record.一个隐藏的EOF在这，同时会记录所有当前匹配的数据
 # 如果我在这加一个EOF，就不会record我当前匹配的记录 
-EOF
+# EOF

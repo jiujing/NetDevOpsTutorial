@@ -1,11 +1,13 @@
 from textfsm import TextFSM
 
-
 if __name__ == '__main__':
-    with open('case04.log', 'r', encoding='utf8') as f:
+    '''
+    从textfsm导入TextFSM类，实例化的时候传入的是一个IO文件对象，不是字符串，这点一定要注意。
+    实例化后，调用函数ParseTextToDicts，传入参数我们show出来的网络配置，即可解析出来字典的列表。
+    '''
+    with open('case0.log', 'r', encoding='utf8') as f:
         dev_text = f.read()
-    template = TextFSM(open('case04C.textfsm',encoding='utf8'))
+    template = TextFSM(open('err_for_case0.textfsm', encoding='utf8'))
     infos = template.ParseTextToDicts(dev_text)
     for i in infos:
         print(i)
-        

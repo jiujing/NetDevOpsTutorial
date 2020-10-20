@@ -1,0 +1,17 @@
+# 我们要匹配以下字段
+# Year
+# Day of month
+# Month
+# Timezone
+# Time (to the second)
+# 先定义value
+Value Year (\d+)
+Value MonthDay (\d+)
+Value Month (\w+)
+Value Timezone (\S+)
+Value Time (..:..:..)
+# 一定要隔一个空白行写state，且第一个state必须是Start
+
+Start
+# 我们故意创造一个err 格式是Error空格Error的信息（在“”内）
+  ^${Time}.* ${Timezone} \w+ ${Month} ${MonthDay} ${Year} -> Error "err made in netdevops"
