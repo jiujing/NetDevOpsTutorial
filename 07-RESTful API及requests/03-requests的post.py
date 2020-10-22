@@ -20,7 +20,7 @@ if __name__ == '__main__':
     print('resp_json:', resp.json())
 
 
-    for i in range(30,60):
+    for i in range(70,80):
         data = {
             'ip': '192.168.2.{}'.format(i),
             'name': 'bj-a-a{}'.format(i),

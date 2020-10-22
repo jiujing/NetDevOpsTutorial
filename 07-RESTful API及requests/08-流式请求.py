@@ -14,5 +14,5 @@ if __name__ == '__main__':
     #         decoded_line = line.decode('utf-8')
     #         print(json.loads(decoded_line))
     # for content in r.iter_content(chunk_size=1024):
-    for content in r.iter_content(chunk_size=100):
+    for content in r.iter_content(chunk_size=104):
         print(content)

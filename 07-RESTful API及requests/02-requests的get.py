@@ -1,4 +1,5 @@
 import requests
+from requests.auth import HTTPBasicAuth
 
 if __name__ == '__main__':
     '''
@@ -9,7 +10,8 @@ if __name__ == '__main__':
     content是二进制的返回对象，处理一些图片的时候可以用到
     '''
 
-    resp = requests.get('http://127.0.0.1:8000/api/cmdb/devices/')
+    resp = requests.get('http://127.0.0.1:8000/api/cmdb/devices/',
+                        auth=HTTPBasicAuth(username='netdevops', password='Admin123!'))
     print('status_code:', resp.status_code)
     print('resp_json', resp.json())
     print('resp_text_in_str:', resp.text)
@@ -23,7 +25,7 @@ if __name__ == '__main__':
         'page': 2,
         'page_size': 5
     }
-    resp = requests.get('http://127.0.0.1:8000/api/cmdb/devices/',params=params)
+    resp = requests.get('http://127.0.0.1:8000/api/cmdb/devices/', params=params)
     print('status_code:', resp.status_code)
     print('resp_json', resp.json())
 
