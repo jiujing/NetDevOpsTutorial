@@ -10,7 +10,7 @@ if __name__ == "__main__":
     '''
     with open('show_interface_brief.log', 'r', encoding='utf8') as f:
         raw_config_text = f.read()
-    datas = parse_output(platform='cisco_nxos', command='show interface br', data=raw_config_text)
+    datas = parse_output(platform='cisco_ios', command='show ip int bri', data=raw_config_text)
     for i in datas:
         print(i)
 
