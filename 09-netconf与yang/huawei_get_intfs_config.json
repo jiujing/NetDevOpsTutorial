@@ -1,0 +1,796 @@
+{
+    "rpc-reply": {
+        "@message-id": "urn:uuid:d2c95722-ebac-4bbc-b74e-e81d3f5e86d5",
+        "@xmlns": "urn:ietf:params:xml:ns:netconf:base:1.0",
+        "@set-id": "186",
+        "data": {
+            "ifm": {
+                "@xmlns": "http://www.huawei.com/netconf/vrp",
+                "@format-version": "1.0",
+                "@content-version": "1.0",
+                "interfaces": {
+                    "interface": [
+                        {
+                            "ifName": "NULL0",
+                            "ifIndex": "2",
+                            "ifPhyType": "NULL",
+                            "ifPosition": null,
+                            "ifParentIfName": null,
+                            "ifNumber": "0",
+                            "ifDescr": null,
+                            "ifTrunkIfName": null,
+                            "isL2SwitchPort": "false",
+                            "ifAdminStatus": "up",
+                            "ifLinkProtocol": "invalid",
+                            "ifRouterType": "Broadcast",
+                            "ifDf": "false",
+                            "ifTrapEnable": "true",
+                            "ifMtu": "1500",
+                            "ifMac": "0000-0000-0000",
+                            "vrfName": {
+                                "@id": "0",
+                                "#text": "_public_"
+                            },
+                            "ifStatItvl": null,
+                            "vsName": "Admin-VS",
+                            "ifServiceType": "None",
+                            "ifClass": "mainInterface",
+                            "l2SubIfFlag": "false",
+                            "protocolUpDelayTime": null,
+                            "ifNetworkLayerStatus": "ipv4andipv6up",
+                            "ifCfgMac": null,
+                            "ifDynamicInfo": {
+                                "ifOperStatus": "up",
+                                "ifPhyStatus": "up",
+                                "ifLinkStatus": "up",
+                                "ifOpertMTU": "1500",
+                                "ifOperSpeed": null,
+                                "ifV4State": "up",
+                                "ifV6State": "up",
+                                "ifCtrlFlapDamp": "false",
+                                "ifOperMac": null,
+                                "lineProtocolUpTime": null,
+                                "isOffline": "false"
+                            },
+                            "ifControlFlap": {
+                                "ifSuppress": "2000",
+                                "ifReuse": "750",
+                                "ifDecayOk": "54",
+                                "ifDecayNg": "54",
+                                "ifCeiling": "6000",
+                                "ifCtrlFlapEnbl": "false"
+                            },
+                            "ifTrapThreshold": {
+                                "inputRisingRate": null,
+                                "inputResumeRate": null,
+                                "outputRisingRate": null,
+                                "outputResumeRate": null
+                            },
+                            "ifStatistics": {
+                                "receiveByte": "0",
+                                "sendByte": "0",
+                                "receivePacket": "0",
+                                "sendPacket": "0",
+                                "rcvUniPacket": "0",
+                                "rcvMutiPacket": "0",
+                                "rcvBroadPacket": "0",
+                                "sendUniPacket": "0",
+                                "sendMutiPacket": "0",
+                                "sendBroadPacket": "0",
+                                "rcvErrorPacket": "0",
+                                "rcvDropPacket": "0",
+                                "sendErrorPacket": "0",
+                                "sendDropPacket": "0",
+                                "receiveByteRate": "0",
+                                "receivePacketRate": "0",
+                                "sendByteRate": "0",
+                                "sendPacketRate": "0"
+                            },
+                            "ifClearedStat": {
+                                "ifOperStatItvl": "300",
+                                "inByteRate": "0",
+                                "inPacketRate": "0",
+                                "inUseRate": "0.00%",
+                                "outByteRate": "0",
+                                "outPacketRate": "0",
+                                "outUseRate": "0.00%",
+                                "receiveByte": "0",
+                                "sendByte": "0",
+                                "receivePacket": "0",
+                                "sendPacket": "0",
+                                "rcvUniPacket": "0",
+                                "rcvMutiPacket": "0",
+                                "rcvBroadPacket": "0",
+                                "sendUniPacket": "0",
+                                "sendMutiPacket": "0",
+                                "sendBroadPacket": "0",
+                                "rcvErrorPacket": "0",
+                                "rcvDropPacket": "0",
+                                "sendErrorPacket": "0",
+                                "sendDropPacket": "0",
+                                "sendUniPacketRate": "0",
+                                "rcvUniPacketRate": "0",
+                                "sendMutiPacketRate": "0",
+                                "rcvMutiPacketRate": "0",
+                                "sendBroadPacketRate": "0",
+                                "rcvBroadPacketRate": "0"
+                            },
+                            "ifmAm4": {
+                                "unNumIfName": null,
+                                "addrCfgType": "config"
+                            },
+                            "ifmAm6": {
+                                "enableFlag": "false",
+                                "ifMtu6": null,
+                                "autoLinkLocal": "false"
+                            },
+                            "ifErrorDown": {
+                                "errorDownCause": "invalid",
+                                "recoveryTime": "0",
+                                "remainderTime": "0"
+                            },
+                            "ipv4Config": {
+                                "unNumIfName": null,
+                                "addrCfgType": "config"
+                            },
+                            "ipv6Config": {
+                                "enableFlag": "false",
+                                "ifMtu6": null,
+                                "autoLinkLocal": "false"
+                            }
+                        },
+                        {
+                            "ifName": "MEth0/0/0",
+                            "ifIndex": "4",
+                            "ifPhyType": "MEth",
+                            "ifPosition": "0/0/0",
+                            "ifParentIfName": null,
+                            "ifNumber": "0/0/0",
+                            "ifDescr": null,
+                            "ifTrunkIfName": null,
+                            "isL2SwitchPort": "false",
+                            "ifAdminStatus": "up",
+                            "ifLinkProtocol": "ethernet",
+                            "ifRouterType": "Broadcast",
+                            "ifDf": "false",
+                            "ifTrapEnable": "true",
+                            "ifMtu": "1500",
+                            "ifMac": "707b-e871-4b3a",
+                            "vrfName": {
+                                "@id": "0",
+                                "#text": "_public_"
+                            },
+                            "ifStatItvl": null,
+                            "vsName": "Admin-VS",
+                            "ifServiceType": "None",
+                            "ifClass": "mainInterface",
+                            "l2SubIfFlag": "false",
+                            "protocolUpDelayTime": null,
+                            "ifNetworkLayerStatus": "ipv4andipv6up",
+                            "ifCfgMac": null,
+                            "ifDynamicInfo": {
+                                "ifOperStatus": "up",
+                                "ifPhyStatus": "up",
+                                "ifLinkStatus": "up",
+                                "ifOpertMTU": "1500",
+                                "ifOperSpeed": "100000000",
+                                "ifV4State": "down",
+                                "ifV6State": "down",
+                                "ifCtrlFlapDamp": "false",
+                                "ifOperMac": "707b-e871-4b3a",
+                                "lineProtocolUpTime": null,
+                                "isOffline": "false"
+                            },
+                            "ifControlFlap": {
+                                "ifSuppress": "2000",
+                                "ifReuse": "750",
+                                "ifDecayOk": "54",
+                                "ifDecayNg": "54",
+                                "ifCeiling": "6000",
+                                "ifCtrlFlapEnbl": "false"
+                            },
+                            "ifTrapThreshold": {
+                                "inputRisingRate": null,
+                                "inputResumeRate": null,
+                                "outputRisingRate": null,
+                                "outputResumeRate": null
+                            },
+                            "ifStatistics": {
+                                "receiveByte": "0",
+                                "sendByte": "0",
+                                "receivePacket": "0",
+                                "sendPacket": "0",
+                                "rcvUniPacket": "0",
+                                "rcvMutiPacket": "0",
+                                "rcvBroadPacket": "0",
+                                "sendUniPacket": "0",
+                                "sendMutiPacket": "0",
+                                "sendBroadPacket": "0",
+                                "rcvErrorPacket": "0",
+                                "rcvDropPacket": "0",
+                                "sendErrorPacket": "0",
+                                "sendDropPacket": "0",
+                                "receiveByteRate": "0",
+                                "receivePacketRate": "0",
+                                "sendByteRate": "0",
+                                "sendPacketRate": "0"
+                            },
+                            "ifClearedStat": {
+                                "ifOperStatItvl": "300",
+                                "inByteRate": "0",
+                                "inPacketRate": "0",
+                                "inUseRate": "0.00%",
+                                "outByteRate": "0",
+                                "outPacketRate": "0",
+                                "outUseRate": "0.00%",
+                                "receiveByte": "0",
+                                "sendByte": "0",
+                                "receivePacket": "0",
+                                "sendPacket": "0",
+                                "rcvUniPacket": "0",
+                                "rcvMutiPacket": "0",
+                                "rcvBroadPacket": "0",
+                                "sendUniPacket": "0",
+                                "sendMutiPacket": "0",
+                                "sendBroadPacket": "0",
+                                "rcvErrorPacket": "0",
+                                "rcvDropPacket": "0",
+                                "sendErrorPacket": "0",
+                                "sendDropPacket": "0",
+                                "sendUniPacketRate": "0",
+                                "rcvUniPacketRate": "0",
+                                "sendMutiPacketRate": "0",
+                                "rcvMutiPacketRate": "0",
+                                "sendBroadPacketRate": "0",
+                                "rcvBroadPacketRate": "0"
+                            },
+                            "ifmAm4": {
+                                "unNumIfName": null,
+                                "addrCfgType": "config"
+                            },
+                            "ifmAm6": {
+                                "enableFlag": "false",
+                                "ifMtu6": null,
+                                "autoLinkLocal": "false"
+                            },
+                            "ifErrorDown": {
+                                "errorDownCause": "invalid",
+                                "recoveryTime": "0",
+                                "remainderTime": "0"
+                            },
+                            "ipv4Config": {
+                                "unNumIfName": null,
+                                "addrCfgType": "config"
+                            },
+                            "ipv6Config": {
+                                "enableFlag": "false",
+                                "ifMtu6": null,
+                                "autoLinkLocal": "false"
+                            }
+                        },
+                        {
+                            "ifName": "GE1/0/0",
+                            "ifIndex": "5",
+                            "ifPhyType": "GEBrief",
+                            "ifPosition": "1/0/0",
+                            "ifParentIfName": null,
+                            "ifNumber": "1/0/0",
+                            "ifDescr": null,
+                            "ifTrunkIfName": null,
+                            "isL2SwitchPort": "false",
+                            "ifAdminStatus": "up",
+                            "ifLinkProtocol": "ethernet",
+                            "ifRouterType": "Broadcast",
+                            "ifDf": "false",
+                            "ifTrapEnable": "true",
+                            "ifMtu": "1500",
+                            "ifMac": "386e-bb01-0100",
+                            "vrfName": {
+                                "@id": "0",
+                                "#text": "_public_"
+                            },
+                            "ifStatItvl": null,
+                            "vsName": "Admin-VS",
+                            "ifServiceType": "None",
+                            "ifClass": "mainInterface",
+                            "l2SubIfFlag": "false",
+                            "protocolUpDelayTime": "0",
+                            "ifNetworkLayerStatus": "ipv4andipv6up",
+                            "ifCfgMac": null,
+                            "ifDynamicInfo": {
+                                "ifOperStatus": "up",
+                                "ifPhyStatus": "up",
+                                "ifLinkStatus": "up",
+                                "ifOpertMTU": "1500",
+                                "ifOperSpeed": "100000000",
+                                "ifV4State": "up",
+                                "ifV6State": "down",
+                                "ifCtrlFlapDamp": "false",
+                                "ifOperMac": "386e-bb01-0100",
+                                "lineProtocolUpTime": "2020-10-23T10:17:30",
+                                "isOffline": "false"
+                            },
+                            "ifControlFlap": {
+                                "ifSuppress": "2000",
+                                "ifReuse": "750",
+                                "ifDecayOk": "54",
+                                "ifDecayNg": "54",
+                                "ifCeiling": "6000",
+                                "ifCtrlFlapEnbl": "false"
+                            },
+                            "ifTrapThreshold": {
+                                "inputRisingRate": "100",
+                                "inputResumeRate": "100",
+                                "outputRisingRate": "100",
+                                "outputResumeRate": "100"
+                            },
+                            "ifStatistics": {
+                                "receiveByte": "0",
+                                "sendByte": "0",
+                                "receivePacket": "3596",
+                                "sendPacket": "1168",
+                                "rcvUniPacket": "904",
+                                "rcvMutiPacket": "331",
+                                "rcvBroadPacket": "2386",
+                                "sendUniPacket": "1200",
+                                "sendMutiPacket": "0",
+                                "sendBroadPacket": "1",
+                                "rcvErrorPacket": "0",
+                                "rcvDropPacket": "0",
+                                "sendErrorPacket": "0",
+                                "sendDropPacket": "0",
+                                "receiveByteRate": "0",
+                                "receivePacketRate": "0",
+                                "sendByteRate": "0",
+                                "sendPacketRate": "0"
+                            },
+                            "ifClearedStat": {
+                                "ifOperStatItvl": "300",
+                                "inByteRate": "0",
+                                "inPacketRate": "0",
+                                "inUseRate": "0.00%",
+                                "outByteRate": "0",
+                                "outPacketRate": "0",
+                                "outUseRate": "0.00%",
+                                "receiveByte": "0",
+                                "sendByte": "0",
+                                "receivePacket": "3621",
+                                "sendPacket": "1202",
+                                "rcvUniPacket": "904",
+                                "rcvMutiPacket": "331",
+                                "rcvBroadPacket": "2386",
+                                "sendUniPacket": "1201",
+                                "sendMutiPacket": "0",
+                                "sendBroadPacket": "1",
+                                "rcvErrorPacket": "0",
+                                "rcvDropPacket": "0",
+                                "sendErrorPacket": "0",
+                                "sendDropPacket": "0",
+                                "sendUniPacketRate": "0",
+                                "rcvUniPacketRate": "0",
+                                "sendMutiPacketRate": "0",
+                                "rcvMutiPacketRate": "0",
+                                "sendBroadPacketRate": "0",
+                                "rcvBroadPacketRate": "0"
+                            },
+                            "ifmAm4": {
+                                "unNumIfName": null,
+                                "addrCfgType": "config",
+                                "am4CfgAddrs": {
+                                    "am4CfgAddr": {
+                                        "ifIpAddr": "192.168.56.202",
+                                        "subnetMask": "255.255.255.0",
+                                        "addrType": "main"
+                                    }
+                                }
+                            },
+                            "ifmAm6": {
+                                "enableFlag": "false",
+                                "ifMtu6": null,
+                                "autoLinkLocal": "false"
+                            },
+                            "ifErrorDown": {
+                                "errorDownCause": "invalid",
+                                "recoveryTime": "0",
+                                "remainderTime": "0"
+                            },
+                            "ipv4Config": {
+                                "unNumIfName": null,
+                                "addrCfgType": "config",
+                                "am4CfgAddrs": {
+                                    "am4CfgAddr": {
+                                        "ifIpAddr": "192.168.56.202",
+                                        "subnetMask": "255.255.255.0",
+                                        "addrType": "main"
+                                    }
+                                }
+                            },
+                            "ipv4Oper": {
+                                "ipv4Addrs": {
+                                    "ipv4Addr": {
+                                        "ifIpAddr": "192.168.56.202",
+                                        "subnetMask": "255.255.255.0",
+                                        "addrType": "main"
+                                    }
+                                }
+                            },
+                            "ipv6Config": {
+                                "enableFlag": "false",
+                                "ifMtu6": null,
+                                "autoLinkLocal": "false"
+                            }
+                        },
+                        {
+                            "ifName": "GE1/0/1",
+                            "ifIndex": "6",
+                            "ifPhyType": "GEBrief",
+                            "ifPosition": "1/0/1",
+                            "ifParentIfName": null,
+                            "ifNumber": "1/0/1",
+                            "ifDescr": null,
+                            "ifTrunkIfName": null,
+                            "isL2SwitchPort": "true",
+                            "ifAdminStatus": "down",
+                            "ifLinkProtocol": "ethernet",
+                            "ifRouterType": "Broadcast",
+                            "ifDf": "false",
+                            "ifTrapEnable": "true",
+                            "ifMtu": "1500",
+                            "ifMac": "707b-e871-4b3b",
+                            "vrfName": {
+                                "@id": "0",
+                                "#text": "_public_"
+                            },
+                            "ifStatItvl": null,
+                            "vsName": "Admin-VS",
+                            "ifServiceType": "None",
+                            "ifClass": "mainInterface",
+                            "l2SubIfFlag": "false",
+                            "protocolUpDelayTime": null,
+                            "ifNetworkLayerStatus": "ipv4andipv6up",
+                            "ifCfgMac": null,
+                            "ifDynamicInfo": {
+                                "ifOperStatus": "down",
+                                "ifPhyStatus": "down",
+                                "ifLinkStatus": "down",
+                                "ifOpertMTU": "1500",
+                                "ifOperSpeed": "100000000",
+                                "ifV4State": "down",
+                                "ifV6State": "down",
+                                "ifCtrlFlapDamp": "false",
+                                "ifOperMac": "707b-e871-4b3b",
+                                "lineProtocolUpTime": null,
+                                "isOffline": "false"
+                            },
+                            "ifControlFlap": {
+                                "ifSuppress": "2000",
+                                "ifReuse": "750",
+                                "ifDecayOk": "54",
+                                "ifDecayNg": "54",
+                                "ifCeiling": "6000",
+                                "ifCtrlFlapEnbl": "false"
+                            },
+                            "ifTrapThreshold": {
+                                "inputRisingRate": "100",
+                                "inputResumeRate": "100",
+                                "outputRisingRate": "100",
+                                "outputResumeRate": "100"
+                            },
+                            "ifStatistics": {
+                                "receiveByte": "0",
+                                "sendByte": "0",
+                                "receivePacket": "0",
+                                "sendPacket": "0",
+                                "rcvUniPacket": "0",
+                                "rcvMutiPacket": "0",
+                                "rcvBroadPacket": "0",
+                                "sendUniPacket": "0",
+                                "sendMutiPacket": "0",
+                                "sendBroadPacket": "0",
+                                "rcvErrorPacket": "0",
+                                "rcvDropPacket": "0",
+                                "sendErrorPacket": "0",
+                                "sendDropPacket": "0",
+                                "receiveByteRate": "0",
+                                "receivePacketRate": "0",
+                                "sendByteRate": "0",
+                                "sendPacketRate": "0"
+                            },
+                            "ifClearedStat": {
+                                "ifOperStatItvl": "300",
+                                "inByteRate": "0",
+                                "inPacketRate": "0",
+                                "inUseRate": "0.00%",
+                                "outByteRate": "0",
+                                "outPacketRate": "0",
+                                "outUseRate": "0.00%",
+                                "receiveByte": "0",
+                                "sendByte": "0",
+                                "receivePacket": "0",
+                                "sendPacket": "0",
+                                "rcvUniPacket": "0",
+                                "rcvMutiPacket": "0",
+                                "rcvBroadPacket": "0",
+                                "sendUniPacket": "0",
+                                "sendMutiPacket": "0",
+                                "sendBroadPacket": "0",
+                                "rcvErrorPacket": "0",
+                                "rcvDropPacket": "0",
+                                "sendErrorPacket": "0",
+                                "sendDropPacket": "0",
+                                "sendUniPacketRate": "0",
+                                "rcvUniPacketRate": "0",
+                                "sendMutiPacketRate": "0",
+                                "rcvMutiPacketRate": "0",
+                                "sendBroadPacketRate": "0",
+                                "rcvBroadPacketRate": "0"
+                            },
+                            "ifmAm4": {
+                                "unNumIfName": null,
+                                "addrCfgType": "config"
+                            },
+                            "ifmAm6": {
+                                "enableFlag": "false",
+                                "ifMtu6": null,
+                                "autoLinkLocal": "false"
+                            },
+                            "ifErrorDown": {
+                                "errorDownCause": "invalid",
+                                "recoveryTime": "0",
+                                "remainderTime": "0"
+                            },
+                            "ipv4Config": {
+                                "unNumIfName": null,
+                                "addrCfgType": "config"
+                            },
+                            "ipv6Config": {
+                                "enableFlag": "false",
+                                "ifMtu6": null,
+                                "autoLinkLocal": "false"
+                            }
+                        },
+                        {
+                            "ifName": "GE1/0/2",
+                            "ifIndex": "7",
+                            "ifPhyType": "GEBrief",
+                            "ifPosition": "1/0/2",
+                            "ifParentIfName": null,
+                            "ifNumber": "1/0/2",
+                            "ifDescr": null,
+                            "ifTrunkIfName": null,
+                            "isL2SwitchPort": "true",
+                            "ifAdminStatus": "down",
+                            "ifLinkProtocol": "ethernet",
+                            "ifRouterType": "Broadcast",
+                            "ifDf": "false",
+                            "ifTrapEnable": "true",
+                            "ifMtu": "1500",
+                            "ifMac": "707b-e871-4b3b",
+                            "vrfName": {
+                                "@id": "0",
+                                "#text": "_public_"
+                            },
+                            "ifStatItvl": null,
+                            "vsName": "Admin-VS",
+                            "ifServiceType": "None",
+                            "ifClass": "mainInterface",
+                            "l2SubIfFlag": "false",
+                            "protocolUpDelayTime": null,
+                            "ifNetworkLayerStatus": "ipv4andipv6up",
+                            "ifCfgMac": null,
+                            "ifDynamicInfo": {
+                                "ifOperStatus": "down",
+                                "ifPhyStatus": "down",
+                                "ifLinkStatus": "down",
+                                "ifOpertMTU": "1500",
+                                "ifOperSpeed": "100000000",
+                                "ifV4State": "down",
+                                "ifV6State": "down",
+                                "ifCtrlFlapDamp": "false",
+                                "ifOperMac": "707b-e871-4b3b",
+                                "lineProtocolUpTime": null,
+                                "isOffline": "false"
+                            },
+                            "ifControlFlap": {
+                                "ifSuppress": "2000",
+                                "ifReuse": "750",
+                                "ifDecayOk": "54",
+                                "ifDecayNg": "54",
+                                "ifCeiling": "6000",
+                                "ifCtrlFlapEnbl": "false"
+                            },
+                            "ifTrapThreshold": {
+                                "inputRisingRate": "100",
+                                "inputResumeRate": "100",
+                                "outputRisingRate": "100",
+                                "outputResumeRate": "100"
+                            },
+                            "ifStatistics": {
+                                "receiveByte": "0",
+                                "sendByte": "0",
+                                "receivePacket": "0",
+                                "sendPacket": "0",
+                                "rcvUniPacket": "0",
+                                "rcvMutiPacket": "0",
+                                "rcvBroadPacket": "0",
+                                "sendUniPacket": "0",
+                                "sendMutiPacket": "0",
+                                "sendBroadPacket": "0",
+                                "rcvErrorPacket": "0",
+                                "rcvDropPacket": "0",
+                                "sendErrorPacket": "0",
+                                "sendDropPacket": "0",
+                                "receiveByteRate": "0",
+                                "receivePacketRate": "0",
+                                "sendByteRate": "0",
+                                "sendPacketRate": "0"
+                            },
+                            "ifClearedStat": {
+                                "ifOperStatItvl": "300",
+                                "inByteRate": "0",
+                                "inPacketRate": "0",
+                                "inUseRate": "0.00%",
+                                "outByteRate": "0",
+                                "outPacketRate": "0",
+                                "outUseRate": "0.00%",
+                                "receiveByte": "0",
+                                "sendByte": "0",
+                                "receivePacket": "0",
+                                "sendPacket": "0",
+                                "rcvUniPacket": "0",
+                                "rcvMutiPacket": "0",
+                                "rcvBroadPacket": "0",
+                                "sendUniPacket": "0",
+                                "sendMutiPacket": "0",
+                                "sendBroadPacket": "0",
+                                "rcvErrorPacket": "0",
+                                "rcvDropPacket": "0",
+                                "sendErrorPacket": "0",
+                                "sendDropPacket": "0",
+                                "sendUniPacketRate": "0",
+                                "rcvUniPacketRate": "0",
+                                "sendMutiPacketRate": "0",
+                                "rcvMutiPacketRate": "0",
+                                "sendBroadPacketRate": "0",
+                                "rcvBroadPacketRate": "0"
+                            },
+                            "ifmAm4": {
+                                "unNumIfName": null,
+                                "addrCfgType": "config"
+                            },
+                            "ifmAm6": {
+                                "enableFlag": "false",
+                                "ifMtu6": null,
+                                "autoLinkLocal": "false"
+                            },
+                            "ifErrorDown": {
+                                "errorDownCause": "invalid",
+                                "recoveryTime": "0",
+                                "remainderTime": "0"
+                            },
+                            "ipv4Config": {
+                                "unNumIfName": null,
+                                "addrCfgType": "config"
+                            },
+                            "ipv6Config": {
+                                "enableFlag": "false",
+                                "ifMtu6": null,
+                                "autoLinkLocal": "false"
+                            }
+                        },
+                        {
+                            "ifName": "GE1/0/3",
+                            "ifIndex": "8",
+                            "ifPhyType": "GEBrief",
+                            "ifPosition": "1/0/3",
+                            "ifParentIfName": null,
+                            "ifNumber": "1/0/3",
+                            "ifDescr": null,
+                            "ifTrunkIfName": null,
+                            "isL2SwitchPort": "true",
+                            "ifAdminStatus": "down",
+                            "ifLinkProtocol": "ethernet",
+                            "ifRouterType": "Broadcast",
+                            "ifDf": "false",
+                            "ifTrapEnable": "true",
+                            "ifMtu": "1500",
+                            "ifMac": "707b-e871-4b3b",
+                            "vrfName": {
+                                "@id": "0",
+                                "#text": "_public_"
+                            },
+                            "ifStatItvl": null,
+                            "vsName": "Admin-VS",
+                            "ifServiceType": "None",
+                            "ifClass": "mainInterface",
+                            "l2SubIfFlag": "false",
+                            "protocolUpDelayTime": null,
+                            "ifNetworkLayerStatus": "ipv4andipv6up",
+                            "ifCfgMac": null,
+                            "ifDynamicInfo": {
+                                "ifOperStatus": "down",
+                                "ifPhyStatus": "down",
+                                "ifLinkStatus": "down",
+                                "ifOpertMTU": "1500",
+                                "ifOperSpeed": "100000000",
+                                "ifV4State": "down",
+                                "ifV6State": "down",
+                                "ifCtrlFlapDamp": "false",
+                                "ifOperMac": "707b-e871-4b3b",
+                                "lineProtocolUpTime": null,
+                                "isOffline": "false"
+                            },
+                            "ifControlFlap": {
+                                "ifSuppress": "2000",
+                                "ifReuse": "750",
+                                "ifDecayOk": "54",
+                                "ifDecayNg": "54",
+                                "ifCeiling": "6000",
+                                "ifCtrlFlapEnbl": "false"
+                            },
+                            "ifTrapThreshold": {
+                                "inputRisingRate": "100",
+                                "inputResumeRate": "100",
+                                "outputRisingRate": "100",
+                                "outputResumeRate": "100"
+                            },
+                            "ifStatistics": {
+                                "receiveByte": "0",
+                                "sendByte": "0",
+                                "receivePacket": "0",
+                                "sendPacket": "0",
+                                "rcvUniPacket": "0",
+                                "rcvMutiPacket": "0",
+                                "rcvBroadPacket": "0",
+                                "sendUniPacket": "0",
+                                "sendMutiPacket": "0",
+                                "sendBroadPacket": "0",
+                                "rcvErrorPacket": "0",
+                                "rcvDropPacket": "0",
+                                "sendErrorPacket": "0",
+                                "sendDropPacket": "0",
+                                "receiveByteRate": "0",
+                                "receivePacketRate": "0",
+                                "sendByteRate": "0",
+                                "sendPacketRate": "0"
+                            },
+                            "ifClearedStat": {
+                                "ifOperStatItvl": "300",
+                                "inByteRate": "0",
+                                "inPacketRate": "0",
+                                "inUseRate": "0.00%",
+                                "outByteRate": "0",
+                                "outPacketRate": "0",
+                                "outUseRate": "0.00%",
+                                "receiveByte": "0",
+                                "sendByte": "0",
+                                "receivePacket": "0",
+                                "sendPacket": "0",
+                                "rcvUniPacket": "0",
+                                "rcvMutiPacket": "0",
+                                "rcvBroadPacket": "0",
+                                "sendUniPacket": "0",
+                                "sendMutiPacket": "0",
+                                "sendBroadPacket": "0",
+                                "rcvErrorPacket": "0",
+                                "rcvDropPacket": "0",
+                                "sendErrorPacket": "0",
+                                "sendDropPacket": "0",
+                                "sendUniPacketRate": "0",
+                                "rcvUniPacketRate": "0",
+                                "sendMutiPacketRate": "0",
+                                "rcvMutiPacketRate": "0",
+                                "sendBroadPacketRate": "0",
+                                "rcvBroadPacketRate": "0"
+                            },
+                            "ifmAm4": {
+                                "unNumIfName": null,
+                                "addrCfgType": "config"
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}
