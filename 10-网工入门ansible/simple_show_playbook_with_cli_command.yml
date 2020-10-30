@@ -1,0 +1,15 @@
+---
+- name: 执行思科nxos show命令 # play的名称 选填，建议使用，执行的时候显示友好
+  hosts: cisco_nxos  # filter网络设备，针对某group_name，可以是all
+  gather_facts: no # 收集设备的一些基础信息。比如端口、版本、平台等等，耗费时间，网络设备选择不调用
+  # tasks是执行的一系列任务，是多个，每段是一个类似dict的对象，可以转成dict的list
+  tasks:
+    # 一个dict对象是一个任务，由name名称、调用模块名称、传入参数组成，每个模块可以注册回显的信息到指定变量
+    # 这是第一个task，执行show命令，调用了cli_command
+    - name: 执行show命令
+      cli_command:
+         command: show version
+      register: show_text # 将结果注册到变量show_text中，你也可以起其他的名字
+    # 这是第二个task了，调用了debug模块
+    - name: Dispaly show text in msg
+      debug: msg="this is a debug message：{{ show_text }}"
