@@ -5,6 +5,7 @@
 # Timezone
 # Time (to the second)
 # 先定义value
+# 针对文本
 Value Year (\d+)
 Value MonthDay (\d+)
 Value Month (\w+)

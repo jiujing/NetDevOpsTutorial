@@ -2,11 +2,14 @@ from ncclient import manager
 from device import huawei_ce_local as dev
 # from device import nexus9k_info as dev
 
-# import logging
-#
-# logging.basicConfig(
-#     level=logging.INFO,
-# )
+import logging
+import sys
+
+logging.basicConfig(
+    level=logging.DEBUG,
+    format='%(asctime)s %(levelname)s: %(message)s',
+    stream=sys.stdout
+)
 
 if __name__ == '__main__':
 

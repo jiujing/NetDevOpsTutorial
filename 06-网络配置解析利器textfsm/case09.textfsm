@@ -1,0 +1,8 @@
+Value Required interface (\S+)
+Value mode (\S+)
+Value vlan_id (\S+)
+
+Start
+  ^\s*interface\s+ -> Continue.Record
+  ^\s*interface\s+${interface}
+  ^\s*switchport\s+${mode}\s+vlan\s+${vlan_id}

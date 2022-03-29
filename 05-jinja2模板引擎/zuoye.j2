@@ -1,0 +1,10 @@
+{# 这是多个端口的配置模板，修改端口描述 #}
+{% for interface in datas %}
+interface {{ interface.name }}
+   description {{ interface.desc }}
+{%- if interface.up=='yes' %}
+ no shutdown
+{%- else %}
+shutdown
+{% endif %}
+{% endfor %}

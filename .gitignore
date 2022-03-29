@@ -104,3 +104,10 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+# zip rar
+*.zip
+*.rar
+
+*.gitconfig
+*.vscode*

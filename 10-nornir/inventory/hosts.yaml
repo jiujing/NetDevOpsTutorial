@@ -1,0 +1,27 @@
+---
+dev01.leaf:
+  hostname: 192.168.56.201
+  username: netdevops
+  password: Admin123!
+  port: 22
+  platform: huawei
+  data:
+    show_version_cmd: display version
+
+dev02.leaf:
+  hostname: 192.168.56.202
+  username: netdevops
+  password: Admin123!
+  port: 22
+  platform: huawei
+  data:
+    show_version_cmd: display version
+
+dev03.spine:
+  hostname: sbx-nxos-mgmt.cisco.com
+  username: admin
+  password: Admin_1234!
+  port: 8181
+  platform: cisco_nxos
+  data:
+    show_version_cmd: show version

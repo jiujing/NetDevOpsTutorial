@@ -1,5 +1,5 @@
 {# 这是多个端口的配置模板，修改端口描述 #}
-{% for interface in interfaces %}
+{% for interface in data.interfaces %}
 interface {{ interface.name }}
     description {{ interface.description }}
 {% if interface.shutdown  %}

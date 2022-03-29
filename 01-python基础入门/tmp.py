@@ -1,8 +1,7 @@
-from switch import Switch
-from switch import yanshi_duixaing
-from datetime import datetime
-from ipaddress import IPv4Address
+def func(x):
+    y = x + 1
+    return y
 
-i = IPv4Address('192.168.1.1')
-print(i)
-print(i.version)
+if __name__ == '__main__':
+    y = func(x=10)
+    print(y)

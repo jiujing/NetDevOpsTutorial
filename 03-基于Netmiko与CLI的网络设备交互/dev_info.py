@@ -1,8 +1,8 @@
 nxosv9k = {
     'device_type': 'cisco_nxos',
-    'host': '127.0.0.1',
+    'host': 'sbx-nxos-mgmt.cisco.com',
     'username': 'admin',
-    'password': 'NetDevOps123',
-    'port': 2222,  # optional, defaults to 22
+    'password': 'Admin_1234!',
+    'port': 10000,  # optional, defaults to 22
     # 'secret': 'secret',  # optional, defaults to ''
 }

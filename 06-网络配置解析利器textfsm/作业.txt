@@ -1,0 +1,2 @@
+1、解析show int brief的端口列表
+2、解析show interface的端口列表

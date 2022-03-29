@@ -6,14 +6,14 @@ nexus9k_info = dict(username='admin',
                     device_params={'name': 'nexus'},
                     hostkey_verify=False,
                     port=10000,
-                    manager_params={'timeout': 180}
+                    manager_params={'timeout': 180},
                     )
 
 huawei_ce_local = dict(username='netdevops',
                        password='Admin123!',
                        # connect()方法，连接工具，返回一个连接对象
                        # 默认netconf服务器端是830端口,hostkey_verify是ssh验证问题
-                       host='192.168.56.202',
+                       host='192.168.56.201',
                        # device_params={'name': 'nexus'},
                        hostkey_verify=False,
                        look_for_keys=False,

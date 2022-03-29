@@ -4,10 +4,10 @@ from netmiko import SSHDetect, Netmiko,ConnectHandler
 if __name__ == '__main__':
     device = {
         'device_type': 'autodetect',  # 设备类型使用autodetect ，netmiko会去设备上自动执行命令，判断是什么类型的设备
-        'host': '192.168.199.102',
+        'host': '127.0.0.1',
         'username': 'admin',
-        'password': 'admin123!',
-        'port': 22,
+        'password': 'admin',
+        'port': 10008,
     }
     # 创建一个Detect的对象，将参数赋值
     guesser = SSHDetect(**device)

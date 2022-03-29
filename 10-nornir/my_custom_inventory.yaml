@@ -1,0 +1,12 @@
+---
+inventory:
+      plugin: CMDBInventory
+      options:
+          devices:
+            -
+              name: 123
+
+runner:
+    plugin: threaded
+    options:
+        num_workers: 100

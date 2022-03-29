@@ -1,0 +1,8 @@
+Value interface (\S+)
+Value status (up|down)
+Value desc (.+)
+
+Start
+ ^\S+\s+is\s+ -> Continue.Record
+ ^${interface}\s+is\s+${status} 
+ ^  Description: ${desc}

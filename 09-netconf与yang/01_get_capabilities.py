@@ -1,6 +1,6 @@
 from ncclient import manager
-# from device import huawei_ce_local as dev
-from device import nexus9k_info as dev
+from device import huawei_ce_local as dev
+# from device import nexus9k_info as dev
 
 import logging
 

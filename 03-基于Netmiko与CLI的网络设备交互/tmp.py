@@ -9,11 +9,11 @@ if __name__ == '__main__':
 
     dev_info = {
         'device_type': 'cisco_ios',
-        'host': '192.168.199.102',  # 用host 和ip均可，系统会自动判断
+        'host': '127.0.0.1',  # 用host 和ip均可，系统会自动判断
         'username': 'admin',
-        'password': 'admin123!',
-        'port': 22,  # 默认是22端口，可以不写，在模拟环境可能会有端口映射，或者是使用Telnet等可以指定其他端口
-        'secret': 'admin123！',  # 选填，, 默认值是''，空字符串,这个是enable的密码
+        'password': 'admin',
+        'port': 10005,  # 默认是22端口，可以不写，在模拟环境可能会有端口映射，或者是使用Telnet等可以指定其他端口
+        #'secret': 'admin123！',  # 选填，, 默认值是''，空字符串,这个是enable的密码
     }
 
     # 简单脚本建议使用with ，上下文管理 在退出的时候自动关闭连接，graceful

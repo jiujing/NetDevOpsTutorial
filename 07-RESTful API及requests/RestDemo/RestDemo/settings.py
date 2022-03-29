@@ -80,17 +80,17 @@ REST_FRAMEWORK = {
 }
 
 # restframework config
-REST_FRAMEWORK = {
-    'DEFAULT_AUTHENTICATION_CLASSES': (
-        'rest_framework.authentication.BasicAuthentication',
-        'rest_framework.authentication.SessionAuthentication',
-
-    ),
-    'DEFAULT_PERMISSION_CLASSES': (
-            'rest_framework.permissions.IsAuthenticated',
-
-        )
-}
+# REST_FRAMEWORK = {
+#     'DEFAULT_AUTHENTICATION_CLASSES': (
+#         'rest_framework.authentication.BasicAuthentication',
+#         'rest_framework.authentication.SessionAuthentication',
+#
+#     ),
+#     'DEFAULT_PERMISSION_CLASSES': (
+#             'rest_framework.permissions.IsAuthenticated',
+#
+#         )
+# }
 # # swagger 配置项
 # SWAGGER_SETTINGS = {
 #     # 基础样式

@@ -1,5 +1,11 @@
 from netmiko import ConnectHandler
 
+import logging
+
+logging.basicConfig(
+    level=logging.DEBUG,
+)
+
 if __name__ == '__main__':
     '''
     配置三种方式，先写笔者最建议使用的是send_config_set

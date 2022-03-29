@@ -1,5 +1,11 @@
-from netmiko import ConnectHandler
+from netmiko import ConnectHandler,Netmiko
 from dev_info import nxosv9k
+
+import logging
+import  traceback
+logging.basicConfig(
+    level=logging.INFO,
+)
 
 if __name__ == '__main__':
     '''
@@ -7,14 +13,14 @@ if __name__ == '__main__':
     这其实是一个函数，它会根据你的device_type给你用对应的类实例化成对象
     '''
 
-    net_conn = ConnectHandler(device_type='cisco_ios',
-                              host='192.168.199.102',
-                              username='admin',
-                              password='admin123!',
+    net_conn = Netmiko(device_type='huawei',
+                              host='192.168.56.201',
+                              username='netdevops',
+                              password='Admin123!',
                               port=22,  # 可选参数, 默认是22端口，可以不写，在模拟环境可能会有端口映射，或者是使用Telnet等可以指定其他端口
-                              secret='admin123!'  # 选填，, 默认值是''，空字符串,这个是enable的密码
                               )
-    output = net_conn.send_command('show int')
+    # output = net_conn.send_command('display version')
+    output = net_conn.send_command_timing('display version')
     # 关闭连接
     net_conn.disconnect()
     print(output)
@@ -40,3 +46,4 @@ if __name__ == '__main__':
     '''
      cisco_nxos对很多设备支持都比较好，hillstone的用cisco_nxos也可以show出来信息
     '''
+    traceback.print_exc()

@@ -1,5 +1,5 @@
 import pandas as pd
-
+import netmiko
 if __name__ == '__main__':
     '''
     pandas是一个科学计算的包，但是我们可以借助于它对表格数据的读写

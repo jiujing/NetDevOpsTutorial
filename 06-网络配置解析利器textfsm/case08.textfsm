@@ -1,0 +1,9 @@
+Value name (\S+)
+Value value (\d+)
+Value index (\S+)
+
+
+# APSTYPE_IPTI30  :0000000000000000 [fe] APSTYPE_IPTI31  :0000000000000000 [ff]
+Start
+ ^${name}\s+:${value}\s+\[${index}\]\s -> Continue.Record
+ ^.+\s+${name}\s+:${value}\s+\[${index}\] -> Record

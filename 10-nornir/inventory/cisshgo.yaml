@@ -1,0 +1,17 @@
+---
+dev0:
+  data:
+    show_version_cmd: show version
+  hostname: 127.0.0.1
+  password: admin
+  platform: cisco_xr
+  port: 10001
+  username: admin
+
+dev1:
+  data:
+  hostname: 127.0.0.1
+  password: admin
+  platform: cisco_xr
+  port: 10002
+  username: admin

@@ -1,0 +1,11 @@
+Value interface (Eth\d+/\d+)
+Value vlan (\S+)
+Value type (eth|portchannel|vlan)
+Value mode (\S+)
+Value status (up|down)
+Value reason (.+)
+Value speed (\S+)
+Value portch (\S+)
+
+Start
+ ^${interface}\s+${vlan}\s+${type}\s+${mode}\s+${status}\s+${reason}\s{7}${speed}\s+${portch} -> Record
